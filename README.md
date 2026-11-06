@@ -13,10 +13,10 @@ Each project helps me apply concepts from the roadmaps and strengthen my problem
 
 Project links and descriptions will be added here as projects are completed.
 
-| Path | Project | Description |
-| --- | --- | --- |
-| Frontend | Coming soon | — |
-| Backend | Coming soon | — |
+| Path | Project | Description | Technologies |
+| --- | --- | --- | --- |
+| Frontend | [Single-Page CV](./frontend/single-page-cv/) | A single-page CV using HTML | HTML |
+| Backend | Coming soon | — | — |
 
 ## Goals
 
