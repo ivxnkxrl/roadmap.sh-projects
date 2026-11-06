@@ -13,9 +13,10 @@ Each project helps me apply concepts from the roadmaps and strengthen my problem
 
 Project links and descriptions will be added here as projects are completed.
 
-| Path | Project | Description | Technologies |
+| Path | Project | Technologies | URL |
 | --- | --- | --- | --- |
-| Frontend | [Single-Page CV](./frontend/single-page-cv/) | A single-page CV using HTML | HTML |
+| Frontend | [Single-Page CV](./frontend/single-page-cv/) | HTML | https://roadmap.sh/projects/single-page-cv |
+| Frontend | [Basic HTML Website](./frontend/basic-html-website/) | HTML | https://roadmap.sh/projects/basic-html-website |
 | Backend | Coming soon | — | — |
 
 ## Goals
