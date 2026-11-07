@@ -17,6 +17,7 @@ Project links and descriptions will be added here as projects are completed.
 | --- | --- | --- | --- |
 | Frontend | [Single-Page CV](./frontend/single-page-cv/) | HTML | https://roadmap.sh/projects/single-page-cv |
 | Frontend | [Basic HTML Website](./frontend/basic-html-website/) | HTML | https://roadmap.sh/projects/basic-html-website |
+| Frontend | [Personal Portfolio](./frontend/personal-portfolio/) | HTML, CSS | https://roadmap.sh/projects/portfolio-website |
 | Backend | Coming soon | — | — |
 
 ## Goals
