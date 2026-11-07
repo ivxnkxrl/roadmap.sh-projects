@@ -1,0 +1,565 @@
+
+/* =========================
+   Global Styles
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* =========================
+   Header and Navigation
+   ========================= */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: whitesmoke;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: black;
+}
+
+/* =========================
+   Home Page
+   ========================= */
+
+#home-section {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+#main-header {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+#header-description {
+  font-size: 25px;
+  margin: 0 auto 80px;
+}
+
+/* Home Page Sections */
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+.section-header {
+  font-size: 35px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.section-subheader {
+  font-size: 25px;
+  border-top: 2px solid black;
+  padding: 8px;
+}
+
+/* Home - Projects Section */
+
+#projects-section {
+  padding: 0 30px;
+  min-width: 0;
+}
+
+.project-list {
+  font-size: 20px;
+}
+
+/* Home - Work Experience Section */
+
+#work-experience-section {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 30px 35px;
+  font-size: 20px;
+  min-width: 0;
+}
+
+/* Home - Education Section */
+
+#education-section {
+  padding: 0 30px;
+  font-size: 20px;
+  min-width: 0;
+}
+
+/* Home - Reviews Section */
+
+#reviews-section {
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 10px 0 20px;
+  font-size: 20px;
+}
+
+.review-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+blockquote {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  min-width: 0;
+}
+
+/* =========================
+   Projects Page
+   ========================= */
+
+#projects-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+#projects-page h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+#projects-page ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projects-page li {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.2s ease;
+}
+
+#projects-page li:hover {
+  transform: translateY(-5px);
+}
+
+#projects-page li h2 {
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+#projects-page li p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   Articles Page
+   ========================= */
+
+#articles-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+#articles-section h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+#articles-section article {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+#articles-section article h2 {
+  font-size: 26px;
+  margin: 0 0 15px;
+}
+
+#articles-section article h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+#articles-section article h2 a:hover {
+  text-decoration: underline;
+}
+
+#articles-section article p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 0 15px;
+}
+
+#articles-section article p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   Contact Page
+   ========================= */
+
+#contact-section {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+#contact-section h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+#contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+#contact-section label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contact-section input,
+#contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#contact-section textarea {
+  resize: vertical;
+}
+
+#contact-section input:focus,
+#contact-section textarea:focus {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
+
+#send-btn {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+#send-btn:hover {
+  background-color: #444;
+}
+
+#send-btn:focus-visible {
+  outline: 2px solid #555;
+  outline-offset: 3px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+#footer-section {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* =========================
+   Tablet (768px and below)
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* Header and Navigation */
+
+  .site-header {
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  nav {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  /* Home Page */
+
+  #main-header {
+    font-size: 55px;
+  }
+
+  #header-description {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .section-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .section-header {
+    font-size: 30px;
+  }
+
+  .section-subheader {
+    font-size: 22px;
+  }
+
+  #projects-section,
+  #education-section {
+    padding: 15px 20px;
+  }
+
+  #work-experience-section {
+    padding: 15px 20px 25px;
+  }
+
+  .project-list,
+  #work-experience-section,
+  #education-section,
+  #reviews-section {
+    font-size: 18px;
+  }
+
+  .review-wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  /* Projects Page */
+
+  #projects-page {
+    padding: 30px 20px;
+  }
+
+  #projects-page h1 {
+    font-size: 32px;
+  }
+
+  #projects-page li {
+    padding: 20px;
+  }
+
+  /* Articles Page */
+
+  #articles-section {
+    padding: 30px 20px;
+  }
+
+  #articles-section h1 {
+    font-size: 32px;
+  }
+
+  #articles-section article h2 {
+    font-size: 23px;
+  }
+
+  /* Contact Page */
+
+  #contact-section {
+    padding: 30px 20px;
+  }
+
+  #contact-section h1 {
+    font-size: 32px;
+  }
+}
+
+/* =========================
+   Mobile (480px and below)
+   ========================= */
+
+@media (max-width: 480px) {
+
+  /* Header and Navigation */
+
+  .site-header {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Home Page */
+
+  #main-header {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  #header-description {
+    font-size: 16px;
+    margin: 0 15px 35px;
+  }
+
+  .section-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-header {
+    font-size: 26px;
+  }
+
+  .section-subheader {
+    font-size: 20px;
+  }
+
+  /* All three sections */
+  #projects-section,
+  #work-experience-section,
+  #education-section {
+    width: 100%;
+    padding: 20px 15px;
+    border: none;
+  }
+
+  #work-experience-section {
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .project-list,
+  #work-experience-section,
+  #education-section,
+  #reviews-section {
+    font-size: 16px;
+  }
+
+  .review-wrapper {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  blockquote {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  /* Projects Page */
+
+  #projects-page {
+    padding: 25px 15px;
+  }
+
+  #projects-page h1 {
+    font-size: 28px;
+  }
+
+  #projects-page ul {
+    grid-template-columns: 1fr;
+  }
+
+  #projects-page li h2 {
+    font-size: 20px;
+  }
+
+  #projects-page li p {
+    font-size: 16px;
+  }
+
+  /* Articles Page */
+
+  #articles-section {
+    padding: 25px 15px;
+  }
+
+  #articles-section h1 {
+    font-size: 28px;
+  }
+
+  #articles-section article {
+    padding: 20px;
+  }
+
+  #articles-section article h2 {
+    font-size: 20px;
+  }
+
+  #articles-section article p {
+    font-size: 16px;
+  }
+
+  /* Contact Page */
+
+  #contact-section {
+    padding: 25px 15px;
+  }
+
+  #contact-section h1 {
+    font-size: 28px;
+  }
+
+  #contact-section form {
+    padding: 20px;
+  }
+
+  #contact-section label {
+    font-size: 16px;
+  }
+
+  #send-btn {
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  #footer-section {
+    font-size: 16px;
+    padding: 15px;
+  }
+}

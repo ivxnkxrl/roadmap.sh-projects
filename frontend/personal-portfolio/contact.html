@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <meta name="author" content="Ivan Amoroso">
+  <meta name="description" content="Contact section for basic HTML website.">
+  <meta name="keywords" content="HTML, website, template, beginners">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Contact | Basic HTML Website</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <p>Ivan Amoroso</p>
+    <nav aria-label="Main Navigation">
+      <a class="nav-link" href="./index.html">Home</a>
+      <a class="nav-link" href="./projects.html">Projects</a>
+      <a class="nav-link" href="./articles.html">Articles</a>
+      <a class="nav-link" href="#contact-section">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-section">
+      <h1>Contact Me:</h1>
+      <form action="" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" id="send-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer-section">
+    <p>&copy; all rights reserved 2026</p>
+  </footer>
+</body>
+</html>
