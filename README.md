@@ -19,6 +19,7 @@ Project links and descriptions will be added here as projects are completed.
 | Frontend | [Basic HTML Website](./frontend/basic-html-website/) | HTML | https://roadmap.sh/projects/basic-html-website |
 | Frontend | [Personal Portfolio](./frontend/personal-portfolio/) | HTML, CSS | https://roadmap.sh/projects/portfolio-website |
 | Frontend | [Changelog Component](./frontend/changelog-component/) | HTML, CSS | https://roadmap.sh/projects/changelog-component |
+| Frontend | [Testimonial Cards](./frontend/testimonial-cards/) | HTML, CSS | https://roadmap.sh/projects/testimonial-cards |
 | Backend | Coming soon | — | — |
 
 ## Goals
