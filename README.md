@@ -20,6 +20,7 @@ Project links and descriptions will be added here as projects are completed.
 | Frontend | [Personal Portfolio](./frontend/personal-portfolio/) | HTML, CSS | https://roadmap.sh/projects/portfolio-website |
 | Frontend | [Changelog Component](./frontend/changelog-component/) | HTML, CSS | https://roadmap.sh/projects/changelog-component |
 | Frontend | [Testimonial Cards](./frontend/testimonial-cards/) | HTML, CSS | https://roadmap.sh/projects/testimonial-cards |
+| Frontend | [Datepicker UI](./frontend/datepicker-ui/) | HTML, CSS | https://roadmap.sh/projects/datepicker-ui |
 | Backend | Coming soon | — | — |
 
 ## Goals
