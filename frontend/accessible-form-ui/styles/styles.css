@@ -1,0 +1,257 @@
+:root {
+  --background: #101114;
+  --surface: #1B1D22;
+  --input-bg: #24262D;
+  --border: #343741;
+  --text: #F1F2F4;
+  --muted: #A0A4AF;
+  --accent: #8EA8FF;
+  --error: #FF737D;
+  --success: #77D6A1;
+}
+
+* {
+  font-family: "Cascadia Code", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Form Groups */
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+/* Shared Input Styles */
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: var(--muted);
+}
+
+.form-group input:focus-visible {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.form-group input[aria-invalid="true"] {
+  border-color: var(--error);
+}
+
+/* Password Fields */
+.password-wrapper input {
+  padding-right: 50px;
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* Error Message */
+.error-message {
+  color: var(--error);
+  font-size: 0.9rem;
+}
+
+.password-wrapper:has(.error-message) .show-password-btn {
+  bottom: 42px;
+}
+
+/* Update Profile Button */
+.update-profile-btn {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.update-profile-btn:hover {
+  background-color: var(--text);
+}
+
+.update-profile-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Progress Section */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: var(--input-bg);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 65%;
+  height: 100%;
+  background-color: var(--accent);
+  border-radius: inherit;
+}
+
+.progress-percentage {
+  min-width: 45px;
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Checklist Section */
+.checklist-wrapper {
+  padding: 24px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.checklist li::before {
+  content: "✓";
+  flex-shrink: 0;
+  color: var(--success);
+  font-weight: bold;
+}
+
+.checklist li.incomplete {
+  color: var(--muted);
+}
+
+.checklist li.incomplete::before {
+  content: "○";
+  color: var(--muted);
+}
+
+/* Responsive Design: Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .form-wrapper {
+    padding: 24px 18px;
+    border-radius: 12px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  .form-group input {
+    padding: 12px 14px;
+    font-size: 0.85rem;
+  }
+
+  .password-container input {
+    padding-right: 45px;
+  }
+
+  .show-password-btn {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .password-container:has(.error-message) .show-password-btn {
+    bottom: 37px;
+  }
+
+  .checklist-wrapper {
+    padding: 18px;
+  }
+
+  .checklist li {
+    font-size: 0.8rem;
+  }
+
+  .update-profile-btn {
+    padding: 13px;
+  }
+}

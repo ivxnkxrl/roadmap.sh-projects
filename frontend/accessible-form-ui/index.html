@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ivan Amoroso">
+  <meta name="description" content="A accessible form ui made from HTML and CSS">
+  <meta name="keywords" content="HTML, CSS, website, form, beginners">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Accessible Form UI</title>
+</head>
+<body>
+  <div class="form-wrapper">
+    <form action="#" method="post">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="What should we call you?" aria-required="true" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" aria-invalid="true">
+      </div>
+
+      <!-- Password -->
+      <div class="form-group password-wrapper">
+        <label for="password">Enter Password</label>
+        <input type="password" id="password" name="password" aria-required="true">
+        <button type="button" class="show-password-btn" aria-label="Password is hidden" aria-pressed="false">
+          <i class="ri-eye-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group password-wrapper">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" aria-required="true">
+        <button type="button" class="show-password-btn" aria-label="Password is hidden" aria-pressed="false">
+          <i class="ri-eye-line" aria-hidden="true"></i>
+        </button>
+        <span class="error-message">Passwords must match</span>
+      </div>
+
+      <!-- Update Button -->
+      <div class="form-group">
+        <button type="submit" class="update-profile-btn">Update Profile</button>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-wrapper">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <span class="progress-percentage">65%</span>
+      </div>
+
+      <!-- Checklist -->
+      <div class="checklist-wrapper">
+        <ul class="checklist">
+          <li>Create Account</li>
+          <li>Update Roadmap Progress</li>
+          <li>Setup Public Profile</li>
+          <li class="incomplete">Complete your first project</li>
+          <li class="incomplete">Invite your Friends</li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
